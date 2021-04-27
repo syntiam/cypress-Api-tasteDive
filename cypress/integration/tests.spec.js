@@ -8,7 +8,7 @@ describe('tests api tasteDive', () => {
                 expect(response.body).to.have.property('Similar')
                 expect(response.body.Similar).to.have.property('Results')
                 expect(response.body.Similar).to.have.property('Info')
-                //expect(response.body.Similar.Info[0].Name).to.eq(data.q)
+                expect(response.body.Similar.Info[0].Name).to.eq(data.q)
                 expect(response.body.Similar.Results).to.have.lengthOf(data.limit)
                
                 
